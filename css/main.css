@@ -841,6 +841,11 @@ body {
     padding: 50px 70px;
 }
 
+.catalog__link {
+    color: #FFF;
+    text-decoration: none;
+}
+
 /***************************************************** MEDIA QUERYS ***********************************************/
 
 @media screen and (max-width: 1800px) {
