@@ -24,54 +24,61 @@
         </section>
             
         <section class="cart-info">
-            <div class="row cart-info__row">
-                <div class="col-6">
+            <div class="columns">
+                <div class="column column__data">
                     <div class="cart-info__data">
                         <span class="cart-info-data__static">Ближайщая дата тура:</span>
-                        <span class="cart-info-data__dynamic"> 12 – 18 марта</span>
+                        <span class="cart-info-data__dynamic">12 - 18 марта</span>
                     </div>
-                    <a class="cart-info__link">Другие даты <img src="img/Arrow4.svg" alt="next" class="cart-info-link__arrow"></a>
+                    <a href="#" class="cart-info__link">Другие даты 
+                        <img src="img/Arrow4.svg" alt="Другие даты" class="cart-info-link__arrow">
+                        <img src="img/Arrow5.svg" alt="Оставить заявку" class="cart-info-link__arrow__hide">
+                    </a>
                 </div>
-                <div class="col-6 cart-info__text">
-                    Увлекательное мотопутешествие 
-                    по горной местности самой южной республики России.
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
+                <div class="column column__btn">
                     <button class="btn">
                         <span class="cart-btn__item">Оставить заявку</span>
-                        <img src="img/Arrow5.svg" alt="arrow" class="cart-btn__arrow">
+                        <img src="img/Arrow5.svg" alt="Оставить заявку" class="cart-btn__arrow">
                     </button>
                 </div>
-                <div class="col-6 cart-info-right">
-                    <div class="cart-info-righ__col">
-                        <div class="cart-info-right__dynamic">6 дней</div>
-                        <div class="cart-info-right__static">Продолжительность</div>
-                    </div>
-                    <div class="arrow"></div>
-                    <div class="cart-info-righ__col">
-                        <div class="cart-info-right__dynamic">720 км</div>
-                        <div class="cart-info-right__static">Протяженность</div>
-                    </div>
-                    <div class="arrow"></div>
-                    <div class="cart-info-righ__col">
-                        <div class="cart-info-right__dynamic">6 - 8 участников</div>
-                        <div class="cart-info-right__static">Группа</div>
+            </div>
+            <div class="columns">
+                <div class="column column__title">
+                    <p class="cart-info__text">
+                        Увлекательное мотопутешествие по гороной местности самой южной республики России
+                    </p>
+                </div>
+                <div class="column column__statistics">
+                    <div class="cart-info-right">
+                        <div class="cart-info-right-col">
+                            <div class="cart-info-right__dynamic">6 дней</div>
+                            <div class="cart-info-right__static">Продолжительность</div>
+                        </div>
+                        <div class="arrow"></div>
+                        <div class="cart-info-right-col">
+                            <div class="cart-info-right__dynamic">720 км</div>
+                            <div class="cart-info-right__static">Протяженность</div>
+                        </div>
+                        <div class="arrow"></div>
+                        <div class="cart-info-right-col">
+                            <div class="cart-info-right__dynamic">6 - 8 участников</div>
+                            <div class="cart-info-right__static">Группа</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="way">
             <div class="row way-header">
-                <div class="col-6">
+                <div class="col-lg-6">
                     <h2 class="way-header__item">Маршрут</h2>
                 </div>
-                <div class="col-6"></div>
+                <div class="col-lg-6"></div>
             </div>
             <div class="row way-descr">
-                <div class="col-6"></div>
-                <div class="col-6 col-way__descr">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6 col-way__descr">
                     <p class="way-descr__item">
                         В зависимости от даты тура, маршрут пройдет от Махачкалы до Дербента, либо в обратную сторону.
                     </p>
@@ -192,8 +199,8 @@
         </section>
         <section class="price">
             <h5 class="price__header">Стоимость</h5>
-            <div class="row">
-                <div class="col-6 price__yellow-block">
+            <div class="row price__row">
+                <div class="col-md-6 price__yellow-block">
                     <h6 class="yellow-block__header"><span class="price-header__item">69 000</span>₽</h6>
                     <p class="price-yellow__title">Цена с учетом аренды мотоцикла HONDA XR250</p>
                     <ul class="yellow-block__descr">
@@ -235,7 +242,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-6 price__black-block">
+                <div class="col-md-6 price__black-block">
                     <h6 class="black-block__header">Оставьте заявку <br> на участие</h6>
                     <form action="" class="form">
                         <div class="select">

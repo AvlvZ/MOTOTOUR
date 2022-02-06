@@ -10,14 +10,20 @@ document.addEventListener("DOMContentLoaded", () => {
         selectBody = document.querySelector(".select__body"),
         selectBodyItem = document.querySelectorAll(".select-body__item"),
         selectOutlineText = document.querySelector(".select-outline__text"),
-        formBtn = document.querySelector(".form-btn__item"),
-        inputs = document.querySelectorAll("input[text]");
+        catalogBlogTexts = document.querySelectorAll(".catalog-blog__text");
+        
 
     catalogsTour.forEach((item, i) => {
         if(i % 2 === 1) {
             blockForCatalog[i].classList.add("right");
         }
     });
+
+    cartCatalog.forEach((item, i) => {
+        if(i % 2 === 1) {
+            catalogBlogTexts[i].classList.add("left");
+        }
+    })
 
     cartCatalog.forEach((item, i) => {
         if(i % 2 === 1) {
