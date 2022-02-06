@@ -1669,7 +1669,10 @@ body {
         bottom: -270px;
     }
     .cart-catalog:not(:last-child) {
-        margin-bottom: 349px;
+        margin-bottom: 185px;
+    }
+    .cart-catalogs {
+        margin-bottom: 231px;
     }
 }
 
