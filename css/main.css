@@ -1525,6 +1525,13 @@ a:hover {
         height: auto;
         object-fit: cover;
     }
+    .popup-header__item {
+        font-size: 36px;
+        line-height: 120%;
+    }
+    .popup__header {
+        margin-bottom: 30px;
+    }
 }
 
 
