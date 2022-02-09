@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cartCatalog = document.querySelectorAll(".cart-catalog"),
         counterCartCatalog = document.querySelectorAll(".cart-catalog-catalog__item"),
         selectBtn = document.querySelector(".select-outline__btn"),
+        selectOutline = document.querySelector(".select__outline"),
         selectBody = document.querySelector(".select__body"),
         selectBodyItem = document.querySelectorAll(".select-body__item"),
         selectOutlineText = document.querySelector(".select-outline__text"),
@@ -37,7 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    selectBtn.addEventListener("click", (event) => {
+    selectOutline.addEventListener("focusin", (event) => {
+        event.preventDefault();
+
+        selectBtn.classList.toggle("togglesSelectBtn");
+        selectBody.classList.toggle("togglesSelectBody");
+    });
+
+    selectOutline.addEventListener("focusout", (event) => {
         event.preventDefault();
 
         selectBtn.classList.toggle("togglesSelectBtn");
@@ -85,9 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
             elem.addEventListener("input", mask);
             elem.addEventListener("focus", mask);
             elem.addEventListener("blur", mask);
-        }
-        
+        }   
     }
-
     maskPhone(".form-phone__item");
-})
+});

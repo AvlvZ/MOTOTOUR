@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    
     <div class="wrapper cart">
         <header class="header">
-            <div class="logo">
-                <!-- LOGO -->
-            </div>
+            <a href="index.html">
+                <div class="logo">
+                    <!-- LOGO -->
+                </div>
+            </a>
             <a href="tel:+79997775533" class="btn_phone">
                 +7 (999) 777-55-33
             </a>
@@ -36,10 +39,12 @@
                     </a>
                 </div>
                 <div class="column column__btn">
-                    <button class="btn">
-                        <span class="cart-btn__item">Оставить заявку</span>
-                        <img src="img/Arrow5.svg" alt="Оставить заявку" class="cart-btn__arrow">
-                    </button>
+                    <a href="#price">
+                        <button class="btn">
+                            <span class="cart-btn__item">Оставить заявку</span>
+                            <img src="img/Arrow5.svg" alt="Оставить заявку" class="cart-btn__arrow">
+                        </button>
+                    </a>
                 </div>
             </div>
             <div class="columns">
@@ -197,7 +202,7 @@
                 </div>
             </div>
         </section>
-        <section class="price">
+        <section class="price" id="price">
             <h5 class="price__header">Стоимость</h5>
             <div class="row price__row">
                 <div class="col-md-6 price__yellow-block">
@@ -246,7 +251,7 @@
                     <h6 class="black-block__header">Оставьте заявку <br> на участие</h6>
                     <form action="" class="form">
                         <div class="select">
-                            <div class="select__outline">
+                            <div class="select__outline" tabindex="1">
                                 <div class="select-outline__text">Выберите дату</div>
                                 <button class="select-outline__btn"></button>
                             </div>
@@ -272,9 +277,11 @@
         </section>
         <footer class="footer">
             <div class="footer__logo">
-                <div class="logo">
-                    <!-- LOGO -->
-                </div>
+                <a href="index.html">
+                    <div class="logo">
+                        <!-- LOGO -->
+                    </div>
+                </a>
             </div>
             <div class="footer__link">
                 <a href="#" class="footer-lonk__item">МОТО ТУРЫ</a>
@@ -291,6 +298,7 @@
         </div>
     </div>
 
+    
 <script src="js/main.js"></script>
 </body>
 </html>
