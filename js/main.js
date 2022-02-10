@@ -3,6 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const catalogsTour = document.querySelectorAll(".catalog__item"),
+        catalogImgItem = document.querySelectorAll(".catalog-img__item"),
         blockForCatalog = document.querySelectorAll(".catalog__block"),
         cartCatalog = document.querySelectorAll(".cart-catalog"),
         counterCartCatalog = document.querySelectorAll(".cart-catalog-catalog__item"),
@@ -38,25 +39,33 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    selectOutline.addEventListener("focusin", (event) => {
-        event.preventDefault();
+    // selectOutline.addEventListener("focusin", (event) => {
+    //     event.preventDefault();
 
-        selectBtn.classList.toggle("togglesSelectBtn");
-        selectBody.classList.toggle("togglesSelectBody");
-    });
+    //     selectBtn.classList.toggle("togglesSelectBtn");
+    //     selectBody.classList.toggle("togglesSelectBody");
+    // });
 
-    selectOutline.addEventListener("focusout", (event) => {
-        event.preventDefault();
+    // selectOutline.addEventListener("focusout", (event) => {
+    //     event.preventDefault();
 
-        selectBtn.classList.toggle("togglesSelectBtn");
-        selectBody.classList.toggle("togglesSelectBody");
-    });
+    //     selectBtn.classList.toggle("togglesSelectBtn");
+    //     selectBody.classList.toggle("togglesSelectBody");
+    // });
 
     selectBodyItem.forEach((item, i) => {
         item.addEventListener("click", () => {
             selectOutlineText.innerText = item.textContent;
         })
     });
+
+    catalogImgItem.forEach(item => {
+        item.addEventListener("mousemove", (event) => {
+            item.style.transform = `translateX(${event.clientX / 100}px)`;
+        })
+    })
+
+    console.log("f")
 
     function maskPhone(selector, masked = '+7 (___) ___-__-__') {
         const elems = document.querySelectorAll(selector);

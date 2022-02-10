@@ -232,7 +232,16 @@ a:hover {
 }
 
 .catalog__img {
+    position: relative;
     width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.catalog-img__item {
+    position: absolute;
+    right: -1%;
+    width: 120%;
 }
 
 .catalog__block {
