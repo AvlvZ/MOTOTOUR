@@ -221,27 +221,30 @@ a:hover {
     margin-top: 35px;
 }
 
+.catalog__item:not(:last-child) {
+    margin-bottom: 300px;
+}
+
 .catalog__item {
     position: relative;
     width: 100%;
     margin-bottom: 335px;
 }
 
-.catalog__item:not(:last-child) {
-    margin-bottom: 300px;
-}
-
-.catalog__img {
-    position: relative;
+.otherParallax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 600px;
     overflow: hidden;
+    transition: all 0.1s linear;
 }
 
-.catalog-img__item {
-    position: absolute;
-    right: -1%;
+.childParallax {
     width: 120%;
+    height: 1080px;
+    transition: all 0.5s linear;
 }
 
 .catalog__block {
@@ -659,6 +662,13 @@ a:hover {
 .cart-catalog__img {
     width: 100%;
     height: 810px;
+    overflow: hidden;
+}
+
+.cart-catalog-img__item {
+    width: 1920px;
+    height: 1000px;
+    object-fit: cover;
 }
 
 .cart-catalog__container {
@@ -1540,6 +1550,10 @@ a:hover {
     }
     .popup__header {
         margin-bottom: 30px;
+    }
+    .catalog-img__item {
+        height: 320px;
+        object-fit: cover;
     }
 }
 

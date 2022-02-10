@@ -3,13 +3,10 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const catalogsTour = document.querySelectorAll(".catalog__item"),
-        catalogImgItem = document.querySelectorAll(".catalog-img__item"),
+        catalogImgItem = document.querySelectorAll(".childParallax"),
         blockForCatalog = document.querySelectorAll(".catalog__block"),
         cartCatalog = document.querySelectorAll(".cart-catalog"),
         counterCartCatalog = document.querySelectorAll(".cart-catalog-catalog__item"),
-        selectBtn = document.querySelector(".select-outline__btn"),
-        selectOutline = document.querySelector(".select__outline"),
-        selectBody = document.querySelector(".select__body"),
         selectBodyItem = document.querySelectorAll(".select-body__item"),
         selectOutlineText = document.querySelector(".select-outline__text"),
         catalogBlogTexts = document.querySelectorAll(".catalog-blog__text");
@@ -39,20 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // selectOutline.addEventListener("focusin", (event) => {
-    //     event.preventDefault();
-
-    //     selectBtn.classList.toggle("togglesSelectBtn");
-    //     selectBody.classList.toggle("togglesSelectBody");
-    // });
-
-    // selectOutline.addEventListener("focusout", (event) => {
-    //     event.preventDefault();
-
-    //     selectBtn.classList.toggle("togglesSelectBtn");
-    //     selectBody.classList.toggle("togglesSelectBody");
-    // });
-
     selectBodyItem.forEach((item, i) => {
         item.addEventListener("click", () => {
             selectOutlineText.innerText = item.textContent;
@@ -62,10 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
     catalogImgItem.forEach(item => {
         item.addEventListener("mousemove", (event) => {
             item.style.transform = `translateX(${event.clientX / 100}px)`;
-        })
+        });
     })
-
-    console.log("f")
 
     function maskPhone(selector, masked = '+7 (___) ___-__-__') {
         const elems = document.querySelectorAll(selector);
