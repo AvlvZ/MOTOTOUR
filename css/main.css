@@ -977,6 +977,19 @@ a:hover {
     padding: 80px 70px;
 }
 
+.btn_phone:hover {
+    color: #000;
+}
+
+.banner__descr {
+    font-family: "StratosLCWeb";
+    font-weight: normal;
+    font-size: 19vw;
+    line-height: 88.1%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
 /***************************************************** MEDIA QUERYS ***********************************************/
 
 @media screen and (max-width: 1800px) {
