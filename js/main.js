@@ -9,8 +9,18 @@ document.addEventListener("DOMContentLoaded", () => {
         counterCartCatalog = document.querySelectorAll(".cart-catalog-catalog__item"),
         selectBodyItem = document.querySelectorAll(".select-body__item"),
         selectOutlineText = document.querySelector(".select-outline__text"),
-        catalogBlogTexts = document.querySelectorAll(".catalog-blog__text");
+        catalogBlogTexts = document.querySelectorAll(".catalog-blog__text"),
+        selectInput = document.querySelector(".select__input"),
+        selectBtn = document.querySelector(".form-btn__item");
         
+    
+
+    selectBtn.addEventListener("submit", (event) => {
+
+        console.log(selectOutlineText, selectOutlineText.textContent);
+        selectInput.value = selectOutlineText.textContent;
+        console.log(selectInput, selectInput.value);
+    });
 
     catalogsTour.forEach((item, i) => {
         if(i % 2 === 1) {
@@ -46,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         item.addEventListener("mousemove", (event) => {
             item.style.transform = `translateX(${event.clientX / 100}px)`;
         });
-    })
+    });
 
     function maskPhone(selector, masked = '+7 (___) ___-__-__') {
         const elems = document.querySelectorAll(selector);

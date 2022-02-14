@@ -15,4 +15,14 @@ selectOutline.addEventListener("focusout", (event) => {
 
     selectBtn.classList.toggle("togglesSelectBtn");
     selectBody.classList.toggle("togglesSelectBody");
+    
 });
+
+// selectOutline.addEventListener("click", (event) => {
+//     event.preventDefault();
+
+//     if (event.target.classList.contains("select__outline")) {
+//                 selectBtn.classList.toggle("togglesSelectBtn");
+//                 selectBody.classList.toggle("togglesSelectBody");
+//     }
+// })
